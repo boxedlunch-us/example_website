@@ -11,7 +11,7 @@
 - name: Add Static Files
   copy:
     src: examplesite/
-    dest: /var/www/html
+    dest: /var/www/html/
     owner: root
     group: root
   notify:
