@@ -1,0 +1,19 @@
+---
+# tasks file for static_website
+- name: Install Apache
+  apt:
+    pkg: apache2
+    state: latest
+    update_cache: true
+  notify:
+    - Start Apache
+  
+- name: Add Static Files
+  copy:
+    src: examplesite
+    dest: /var/www/html
+    owner: root
+    group: root
+   notify:
+    - Restart Apache
+    

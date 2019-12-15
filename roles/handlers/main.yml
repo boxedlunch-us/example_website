@@ -1,4 +1,5 @@
 ---
+# handlers
 - name: Start Apache
   service:
     name: apache2
