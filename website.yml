@@ -1,0 +1,8 @@
+---
+# main for creating static website
+- hosts: local
+  connection: local
+  become: yes
+  become_user: root
+  roles:
+    - static_website
