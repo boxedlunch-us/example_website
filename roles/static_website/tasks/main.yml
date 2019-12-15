@@ -10,7 +10,7 @@
   
 - name: Add Static Files
   copy:
-    src: examplesite
+    src: examplesite/
     dest: /var/www/html
     owner: root
     group: root
